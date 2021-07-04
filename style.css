@@ -1,0 +1,503 @@
+
+*{margin: 0px;
+padding: 0px;
+box-sizing: border-box;
+
+}
+
+
+
+.header{
+    /* border: 2px solid rgb(7, 18, 66); */
+    width: 100%;
+    height: 120vh;
+    background-image:linear-gradient(rgba(0 ,168 ,225 ,0.3),rgba(0 ,168 ,225 ,0.3)), url("img/1.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    /* clip-path: polygon(0% 0%,100% 0% ,100% 75%,50% 100% ,0% 75% ); */
+    position: relative;
+    
+}
+/* this is use because we want to combination of two colour */
+.header::before{
+    content: "";
+    position: absolute;
+    top: 0%;
+    bottom: 0%;
+    right: 0;
+    left: 0;
+    opacity: 0.3;
+    z-index: -1;
+    background: linear-gradient(to right,#1e5799 0%,#3ccbdd 0%,#16c9f6 100%);
+    
+
+}
+/* --------------------navbar-------------------------- */
+.navbar{
+    background-color: #0083ff5e!important;
+}
+
+.navbar-brand{
+    font-size: 28px;
+    margin-left: 80px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    color: white!important;
+        font-weight: bolder;
+        font-size: 30px;
+        
+        
+}
+
+.navbar-brand span{font-size: 36px;
+}
+
+.nav-item{
+    margin-left: 20px;
+}
+.nav-possition {
+    margin-right: 200px;
+}
+li a{
+    color: white!important;
+    font-weight: bold;
+    font-size: 17px;
+}
+.nav-item a:hover{
+    color: black;
+}
+
+
+
+
+
+
+
+.flex{
+   
+  
+   height: 90vh;
+   display: flex;
+   margin: auto;
+   justify-content: center;
+   align-items: center;
+   
+   
+}
+.flex .header-section h3{
+    font-size: 70px;
+    font-family: "Work Sans", sans-serif;
+    color: rgb(6, 65, 87);
+}
+.flex .header-section h3 span{
+    
+    font-weight: 700;
+}
+
+/*---------------------------------------- card------------------------------- */
+.timing-details{
+    /* border: 2px solid red; */
+    display: flex;flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    width: auto;
+}
+.inside-box{
+    /* border: 2px solid black; */
+    margin: 20px;
+    padding: 20px;
+    width: 380px;
+    height: 280px;
+    background-color: #283290;
+}
+
+.card-body  img{
+    height: 34px;
+    
+}
+
+.logo{
+    margin-top: -25px;
+    padding-top: 0px;
+}
+
+ 
+.card-content{
+    margin-top: 5px;
+    color: white;
+  
+}
+.card-title{
+    margin-top: 10px;
+}
+
+.card-content h5{
+    font-size: 20px;
+}
+.phone{
+    font-size: 30px;
+}
+
+
+/*---------------------- welcome------------------ */
+.welcome{
+    /* border: 2px solid red; */
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    /* text-align: center; */
+    justify-content:center;
+    margin-top: 40px;
+    
+}
+.weclcome-flex{
+    /* border: 2px solid red; */
+    height: auto;
+    width: 600px;
+    margin: 10px;
+    padding: 10px;}
+.welcome-item{
+   
+    text-align: justify;
+   height: auto;
+  
+  
+} 
+.welcome-item h2{
+    font-size: 40px;
+    text-align: center;
+    font-weight: bold;
+    font-family: 'Ubuntu', sans-serif;
+    color: rgb(10, 11, 12);
+}
+ li{
+    list-style: none;
+}
+.welcome-item-content{
+    align-items: center;
+    text-align: center;
+    text-align: justify;
+    margin: 30px;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 16px;
+    color: #6b6a6a;
+    line-height: 28px;
+}
+.other-side{
+    color: black;
+}
+/* for making dot and change colour  */
+ .other-side li::before {
+    content: "\f100";
+    border-radius: 10px;
+ 
+    color: #111010;
+    padding: 15px;
+  width: 20px;
+  height: 10px;
+  }
+.weclcome-flex .pic img{
+
+    width:100%;
+    
+   height: 600px;
+}
+/* ------------.appointment-button----------- */
+.appointment-button{
+    background-image: url(/img/form-img.jpg);
+    display: flex;
+    flex-wrap: wrap;
+ 
+}
+.appointment-button p{
+    font-size: 30px;
+    font-weight: bold;
+    font-family: 'Ubuntu', sans-serif;
+    color: white;
+   
+    
+}
+.appointment-button .button-setting{
+    margin: 40px;
+    padding: 30px;
+}
+
+
+ /* ----------------servises---------------------- */ 
+.sevices  .service-dic{
+    /* border: 2px solid red; */
+    height: 100px;
+    width: 100%;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 700;
+
+padding: 33px;
+    
+}
+
+
+.services-item{
+    /* border: 2px solid red; */
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+}
+.sevices{
+    position: relative;
+
+}
+/* .sevices::before{
+    content: "";
+    position: absolute;
+    top: 0%;
+    bottom: 0%;
+    right: 0;
+    left: 0;
+    opacity: 0.3;
+    z-index: -1;
+    background: linear-gradient(to right,#1e5799 0%,#3ccbdd 0%,#16c9f6 100%);
+
+} */
+.item{
+    
+    margin: 10px;
+    padding: 4px;
+    width: 400px;
+    height: 350px;
+    text-align: center;
+    background-color: #e1e2e626;
+    line-height: 1.7;
+    font-family: "Work Sans", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    box-shadow: 9px 9px 10px 8px #e3e3e3;
+    
+    
+}
+.item img{
+    height: 43px;
+    margin-top: 10px;
+    margin-bottom: 11px;
+}
+.item .heading{
+    font-size: 30px;
+    font-weight: 500;
+    font-family: sans-serif;
+
+}
+.item:hover{
+    /* background: #283290; */
+    color: blue;
+    transform: scale(1);
+        
+}
+
+/*------------------- doctor details------------------- */
+.doc-details{
+    /* border: 2px solid black; */
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 107px;
+    /* margin-bottom: 100px; */
+   
+    
+
+}
+.doc-details  img{
+    height: 50px;
+    margin-top: 10px;
+    
+  
+    
+}
+.doc-header p{
+    font-size: 40px;
+    font-weight: bolder;
+   font-family: "Work Sans", sans-serif;
+}
+
+
+
+
+.doctor{
+    /* border: 2px solid blue; */
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    margin-top: 20px;
+    align-items: center;
+}
+.doc-name{
+    /* border: 2px solid red; */
+    margin: 4px;
+    padding: 4px;
+    width: 330px;
+    height: 330px;
+    padding-top: 20px;
+  
+}
+.doc-name img{
+    height: 250px;
+    width: 240px;
+    margin-left: 70px;
+    
+}
+.doc-name h2{
+   
+    font-weight: 500;
+}
+.doc-name p{
+    color: rgb(104, 100, 100);
+    font-family: "Work Sans", sans-serif;
+  
+}
+
+/*------------------------------ form ----------------------- */
+.form{
+    /* border: 2px solid red; */
+    height: auto;
+    width: 100%;
+}
+.form-biground{
+    width: 100%;
+    height: auto;
+   
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    
+    position: relative;
+    display: flex;
+    justify-content: center;
+    
+    
+}
+/* this is use because we want to combination of two colour */
+.form-biground::before{
+    content: "";
+    position: absolute;
+    top: 0%;
+    bottom: 0%;
+    right: 0;
+    left: 0;
+    opacity: 0.6;
+    z-index: -1;
+    background: linear-gradient(to right, #3de6fa, #243eff);
+    
+
+}
+.form-details{
+    /* border: 2px solid red; */
+    
+    background-color: #081f3e;
+    position: relative;
+    padding: 50px;
+    color: white;
+    margin: 58px;
+   
+}
+.container h2{
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 20px;
+    font-family: 'Ubuntu', sans-serif;
+}
+/* ------------------fotter --------------------------*/
+
+
+.footer-header{
+    /* border: 2px solid red; */
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center;
+    
+    align-items: center;
+  
+   color: white;
+   /* background-image: url(/img/form-img.jpg); */
+   background-repeat: no-repeat;
+   background-size: 100% 100%;
+   position: relative;
+   background-color: rgb(10, 85, 95);
+   /* background: linear-gradient(to right, #3de6fa, #243eff); */
+   
+    
+}
+
+
+.footer-content
+{
+    /* border: 2px solid green; */
+    padding: 20px;
+   
+    width:400px;
+    height:350px;
+    margin-top: 90px;
+    margin-bottom: 50px;
+    margin-left: 23px;
+    margin-right: 0px;
+    font-family: "Work Sans", sans-serif;
+    
+}
+.footer-content h1{margin-bottom: 10px;
+    font-size: 30px;
+    font-weight: bold;
+
+}
+.footer-content span{
+   
+    color: white;
+    font-size: 15px;
+    font-weight:auto;
+}
+.ul-list{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+
+
+}
+.ul-list .img-setting img{
+    /* border: 2px solid black; */
+
+    width: 40px;
+    height: 40px;
+    padding: 5px;
+    
+}
+
+.list-item{
+    /* border: 2px solid black; */
+    padding: 10px;
+    margin: 4px;
+ 
+}
+.last-navlist-content{
+    Background: linear-gradient(to right, #3de6fa, #243eff);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 0px;
+    
+}
+.main-body{
+    /* border: 5px solid rgb(255, 0, 128); */
+    margin-right: 0px;
+    
+}
